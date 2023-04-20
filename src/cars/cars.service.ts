@@ -53,4 +53,8 @@ export class CarsService {
     this.cars = this.cars.filter((car) => car.id !== carDB.id);
     return;
   }
+
+  fillCarsWithSeeData(cars: Car[]) {
+    this.cars = cars;
+  }
 }
